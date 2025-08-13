@@ -1,6 +1,0 @@
-Al-Kulayni ist für das Schiitentum das, was ein Fundament für ein Gebäude ist. Ohne ihn bricht alles zusammen. Al-Kafi ist das Hauptwerk, auf dem ihre gesamte Ideologie ruht - Ein Buch voll mit Kufr und Shirk, welches eine Beleidigung gegenüber Allah, dem erhabenen, dem Propheten عليه السلام und seinen Gefährten ist. Wie konnte es nur dazu kommen, dass jemand ein Buch mit so viel Schwachsinn zusammenstellt?
-
-Ganz einfach, indem all dies Quatsch ist. Al-Kulayni hat nachweislich Überlieferungen manipuliert. Er ergänzt Namen, verändert Formulierungen und stellt Einzelberichte so dar, als wären sie autoritativ. In vielen Fällen ist er der einzige Überlieferer ganzer Aussagen – kein Zweitzeuge, keine externe Bestätigung. Das nennt man manipulative Eigenkonstruktion, nicht Überlieferung.
-
-Wenn eine Glaubenslehre auf gefälschten Ketten, ideologisch angepassten Hadithen und unbestätigten Aussagen eines Einzelnen basiert, ist das Fundament für jeglichen Anteil an der Wahrheit nicht vorhanden. Diese PDF ist ein Dorn im Auge der ketzerischen Rawafidh.
-![[Die Verfälschungen von al Kulayni.pdf]]

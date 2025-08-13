@@ -1,7 +1,0 @@
-Die Kuffar verwenden Sahih Bukhari 6130, um zu behaupten, Aisha sei unreif gewesen, weil sie mit Puppen spielte. Doch das Spielen mit Puppen bedeutet nicht Unreife.
-
-Wir müssen beachten, dass der Teil, in dem steht, dass man mit Puppen nicht spielen darf und dass Aisha die Pubertät nicht erreicht hatte, nicht von Bukhari stammt, sondern eine Aussage des Gelehrten Ibn Hajar ist, der 700 Jahre nach dem Propheten Muhammad geboren wurde. Das bedeutet, dass es nicht Teil des Hadith ist. Und diese aussage nahm er später zurück
-![[Pasted image 20250212020843.png]]
-Imam Ibn Hibban und Imam an-Nasaa’i halten das Spielen mit Puppen für junge Frauen für erlaubt, unabhängig vom Pubertätsalter. Ibn Hajar zog seine Aussage zurück, dass Aisha die Pubertät nicht erreicht hatte. ( Bukhari 6130 )
-
-Was Puppen angeht, so ist dies kein Beweis dafür, dass Aisha die Pubertät nicht erreicht hat. Früher gab es keine Spiele wie PS4 oder PC und auch keine der heute bekannten Spiele. Daher war es normal, mit Puppen zu spielen. Dies lässt sich sogar in den 1920er Jahren beobachten, als es modisch war, **dass erwachsene Frauen** Puppen trugen. Laut Dr. Juliette Peers wurden Puppen als persönliche Gegenstände von Frauen gekauft.

@@ -1,1 +1,0 @@
-Im Kontext steht es zur Verteidigung warum? Weil ein Kalifat nur auf Verteidigung aufbaut nicht auf angriff.

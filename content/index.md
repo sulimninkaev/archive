@@ -1,3 +1,0 @@
-Bei Fragen addet mich auf Discord -> Sulim_Shafii
-
-Viel Spaß
