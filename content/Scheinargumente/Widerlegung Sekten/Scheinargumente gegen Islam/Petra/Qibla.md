@@ -1,0 +1,5 @@
+The Qibla Of Early Mosques: Jerusalem Or Makkah?, concludes:
+
+> “It was claimed by Crone, Cook and Smith that the early mosques pointed towards an unnamed sanctuary in northern Arabia or even close vicinity of Jerusalem. However, a closer analysis using the modern tools available to us show that the qiblas of early mosques were oriented towards astronomical alignments; winter sunrise of mosque in Egypt and winter sunsets for mosques in Iraq. It was shown conclusively that the early mosques do not point at northern Arabia or even close vicinity of Jerusalem. We also added the study of 12 early mosques in Negev highlands to support our conclusions.
+> 
+> In the early centuries of Islam, Muslim did not have tools to determine the qibla with precision. Only from third century onwards mathematical solutions for determining qibla were available; even then their use was not widespread. The folk astronomy retained its strength as suggested by various mosques in Cairo, Cordova and Samarqand. This gave rise to various directions of qibla, sometimes way off from the true direction.”
