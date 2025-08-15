@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Roboto", // Moderne, klare Schriftart
-        body: "Roboto", // Einheitliche Schriftart für Konsistenz
+        header: "Open Sans", // Moderne, klare Schriftart
+        body: "Open Sans", // Einheitliche Schriftart für Konsistenz
         code: "JetBrains Mono", // Klare monospaced Schriftart
       },
       colors: {
