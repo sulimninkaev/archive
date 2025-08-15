@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Inter",
-        body: "Inter",
-        code: "Fira Code",
+        header: "Roboto", // Moderne, klare Schriftart
+        body: "Roboto", // Einheitliche Schriftart für Konsistenz
+        code: "JetBrains Mono", // Klare monospaced Schriftart
       },
       colors: {
         lightMode: {
-          light: "#e5e7eb", // Helles Grau für Hintergrund
-          lightgray: "#d1d5db", // Mittleres Grau für Akzente
-          gray: "#6b7280", // Dunkleres Grau für Texte
-          darkgray: "#374151", // Sehr dunkles Grau für Kontraste
-          dark: "#111827", // Nahezu Schwarz für Überschriften
-          secondary: "#dc2626", // Lebendiges Rot für Links und Akzente
-          tertiary: "#b91c1c", // Dunkleres Rot für sekundäre Akzente
-          highlight: "rgba(220, 38, 38, 0.1)", // Subtiles Rot für Hervorhebungen
-          textHighlight: "#f87171", // Helles Rot für Text-Hervorhebungen
+          light: "#e5e7eb",
+          lightgray: "#d1d5db",
+          gray: "#6b7280",
+          darkgray: "#374151",
+          dark: "#111827",
+          secondary: "#dc2626",
+          tertiary: "#b91c1c",
+          highlight: "rgba(220, 38, 38, 0.1)",
+          textHighlight: "#f87171",
         },
         darkMode: {
-          light: "#1f2937", // Dunkles Grau für Hintergrund
-          lightgray: "#374151", // Mittleres Grau für Akzente
-          gray: "#9ca3af", // Helles Grau für Texte
-          darkgray: "#d1d5db", // Hellgrau für Kontraste
-          dark: "#f3f4f6", // Nahezu Weiß für Überschriften (Kontrast zu Schwarz)
-          secondary: "#f87171", // Helles Rot für Links
-          tertiary: "#ef4444", // Mittleres Rot für Akzente
-          highlight: "rgba(220, 38, 38, 0.2)", // Subtiles Rot für Dark Mode
-          textHighlight: "#f87171", // Helles Rot für Text-Hervorhebungen
+          light: "#1f2937",
+          lightgray: "#374151",
+          gray: "#9ca3af",
+          darkgray: "#d1d5db",
+          dark: "#f3f4f6",
+          secondary: "#f87171",
+          tertiary: "#ef4444",
+          highlight: "rgba(220, 38, 38, 0.2)",
+          textHighlight: "#f87171",
         },
       },
     },
