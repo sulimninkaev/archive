@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Inter", // Moderne, geometrische Schriftart
+        body: "Inter", // Einheitliche Schriftart für Konsistenz
+        code: "Fira Code", // Moderne Monospace-Schrift mit Ligaturen
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#f55656ff",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ffffff", // Reinweiß für klaren Hintergrund
+          lightgray: "#f1f3f5", // Weicher Grauton für Akzente
+          gray: "#6b7280", // Neutrales Grau für Texte
+          darkgray: "#374151", // Dunkleres Grau für Kontrast
+          dark: "#111827", // Tiefes Dunkelgrau für Überschriften
+          secondary: "#3b82f6", // Lebendiges Blau für Links und Akzente
+          tertiary: "#10b981", // Frisches Grün für sekundäre Akzente
+          highlight: "rgba(59, 130, 246, 0.1)", // Subtiles Blau für Hervorhebungen
+          textHighlight: "#fef08a", // Sanftes Gelb für Text-Hervorhebungen
         },
         darkMode: {
-          light: "#0c0c13ff",
-          lightgray: "#121318ff",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#f55656ff",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1f2937", // Dunkler Hintergrund für Dark Mode
+          lightgray: "#374151", // Leichtes Grau für Akzente
+          gray: "#9ca3af", // Helles Grau für Texte
+          darkgray: "#d1d5db", // Hellere Akzente
+          dark: "#f3f4f6", // Helles Grau für Überschriften
+          secondary: "#60a5fa", // Weicheres Blau für Links
+          tertiary: "#34d399", // Grün für Akzente
+          highlight: "rgba(59, 130, 246, 0.2)", // Subtiles Blau für Dark Mode
+          textHighlight: "#fef08a", // Konsistentes Gelb für Text-Hervorhebungen
         },
       },
     },

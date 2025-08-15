@@ -4,13 +4,22 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
-  afterBody: [],
+  header: [
+    Component.PageTitle(), // Zeigt den Seitentitel „Sulim's Archive“ in der Kopfzeile
+  ],
+  afterBody: [
+    Component.Flex({
+      components: [
+        { Component: Component.RecentNotes({ limit: 3 }), grow: true }, // Zeigt die letzten 3 Notizen
+      ],
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/sulimninkaev",
       "Discord Community": "https://discord.gg/s6uUjQ3Ymz",
     },
+    additionalContent: "<p>&copy; 2025 Sulim's Archive. All rights reserved.</p>", // Moderner Copyright-Hinweis
   }),
 }
 
@@ -26,43 +35,48 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
+        { Component: Component.Search(), grow: true },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
       ],
+      direction: "row", // Horizontale Anordnung für kompakteres Design
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => a.displayName.localeCompare(b.displayName), // Alphabetische Sortierung
+      folderDefaultState: "collapsed", // Ordner standardmäßig eingeklappt
+    }),
   ],
   right: [
-    Component.Graph(),
-    Component.DesktopOnly(Component.TableOfContents()),
+    Component.DesktopOnly(Component.TableOfContents()), // Inhaltsverzeichnis nur auf Desktop
     Component.Backlinks(),
+    Component.ConditionalRender({
+      component: Component.Graph(),
+      condition: () => false, // Graph deaktiviert, um Überladung zu vermeiden (optional aktivierbar)
+    }),
   ],
 }
 
-// components for pages that display lists of pages  (e.g. tags or folders)
+// components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
   left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
+        { Component: Component.Search(), grow: true },
         { Component: Component.Darkmode() },
       ],
+      direction: "row",
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      sortFn: (a, b) => a.displayName.localeCompare(b.displayName),
+      folderDefaultState: "collapsed",
+    }),
   ],
-  right: [],
+  right: [], // Rechte Seitenleiste leer für Listen-Seiten, um Fokus auf Inhalt zu legen
 }
