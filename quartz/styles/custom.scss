@@ -1,9 +1,10 @@
 /* Moderne Styling-Anpassungen für Quartz mit Grau-Schwarz-Rot-Palette */
 :root {
   --border-radius: 8px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Etwas stärkerer Schatten für Tiefe */
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   --transition: all 0.3s ease;
   --max-width: 1200px;
+  --sidebar-width: 300px; /* Erhöhte Breite für die linke Seitenleiste */
 }
 
 /* Allgemeines Layout */
@@ -16,6 +17,27 @@ body {
   color: var(--dark);
   line-height: 1.6;
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Haupt-Container für Seiteninhalt */
+.quartz {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Seitenleisten-Layout */
+.left {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width); /* Sicherstellen, dass die Breite nicht kleiner wird */
+  padding-right: 20px; /* Abstand zum Inhalt */
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+.right {
+  flex-grow: 1;
+  padding-left: 20px;
 }
 
 /* Header */
@@ -88,7 +110,7 @@ pre, code {
 
 .search:focus {
   border-color: var(--secondary);
-  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2); /* Rot für Fokus-Effekt */
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2);
 }
 
 /* Explorer (Seitenleiste) */
@@ -107,6 +129,8 @@ pre, code {
   border-radius: var(--border-radius);
   transition: var(--transition);
   color: var(--darkgray);
+  overflow-wrap: break-word; /* Ermöglicht das Umbrechen langer Wörter */
+  word-break: break-all; /* Sicherstellen, dass lange Titel nicht abgeschnitten werden */
 }
 
 .explorer a:hover {
@@ -239,5 +263,13 @@ html[data-theme="dark"] {
   }
   .explorer, .toc, .backlinks {
     margin-bottom: 1rem;
+  }
+  .left {
+    width: 100%; /* Vollbreite auf Mobilgeräten */
+    min-width: 0; /* Zurücksetzen der minimalen Breite */
+    padding-right: 0;
+  }
+  .right {
+    padding-left: 0;
   }
 }

@@ -5,12 +5,12 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-    Component.PageTitle(), // Zeigt den Seitentitel „Sulim's Archive“ in der Kopfzeile
+    Component.PageTitle(),
   ],
   afterBody: [
     Component.Flex({
       components: [
-        { Component: Component.RecentNotes({ limit: 3 }), grow: true }, // Zeigt die letzten 3 Notizen
+        { Component: Component.RecentNotes({ limit: 3 }), grow: true },
       ],
     }),
   ],
@@ -19,7 +19,7 @@ export const sharedPageComponents: SharedLayout = {
       GitHub: "https://github.com/sulimninkaev",
       "Discord Community": "https://discord.gg/s6uUjQ3Ymz",
     },
-    additionalContent: "<p>&copy; 2025 Sulim's Archive. All rights reserved.</p>", // Moderner Copyright-Hinweis
+    additionalContent: "<p>&copy; 2025 Sulim's Archive. All rights reserved.</p>",
   }),
 }
 
@@ -41,30 +41,26 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
       ],
-      direction: "row", // Horizontale Anordnung für kompakteres Design
+      direction: "row",
     }),
     Component.Explorer({
-      sortFn: (a, b) => a.displayName.localeCompare(b.displayName), // Alphabetische Sortierung
-      folderDefaultState: "collapsed", // Ordner standardmäßig eingeklappt
+      sortFn: (a, b) => a.displayName.localeCompare(b.displayName),
+      folderDefaultState: "collapsed",
     }),
   ],
   right: [
-    Component.DesktopOnly(Component.TableOfContents()), // Inhaltsverzeichnis nur auf Desktop
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
     Component.ConditionalRender({
       component: Component.Graph(),
-      condition: () => false, // Graph deaktiviert, um Überladung zu vermeiden (optional aktivierbar)
+      condition: () => false,
     }),
   ],
 }
 
 // components for pages that display lists of pages (e.g. tags or folders)
 export const defaultListPageLayout: PageLayout = {
-  beforeBody: [
-    Component.Breadcrumbs(),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-  ],
+  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.Flex({
       components: [
@@ -78,5 +74,5 @@ export const defaultListPageLayout: PageLayout = {
       folderDefaultState: "collapsed",
     }),
   ],
-  right: [], // Rechte Seitenleiste leer für Listen-Seiten, um Fokus auf Inhalt zu legen
+  right: [],
 }
