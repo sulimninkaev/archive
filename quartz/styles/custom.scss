@@ -10,6 +10,9 @@
 }
 
 /* Allgemeines Layout */
+/* Google Fonts Import (muss am Anfang stehen) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Open+Sans&display=swap');
+
 /* Allgemeine Schriftart für den Textbereich */
 body {
   font-family: 'Roboto', sans-serif; /* Moderne, klar lesbare Schriftart */
@@ -43,10 +46,6 @@ body {
   font-size: 1.1rem;
   color: #d1d1d1;
 }
-
-/* Google Fonts Import (füge dies in den <head>-Bereich deiner HTML-Datei ein) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Open+Sans&display=swap');
-
 /* Haupt-Container für Seiteninhalt */
 .quartz {
   display: flex;
