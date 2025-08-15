@@ -1,9 +1,7 @@
-@use "./base.scss";
-
-/* Moderne Styling-Anpassungen für Quartz */
+/* Moderne Styling-Anpassungen für Quartz mit Grau-Schwarz-Rot-Palette */
 :root {
   --border-radius: 8px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Etwas stärkerer Schatten für Tiefe */
   --transition: all 0.3s ease;
   --max-width: 1200px;
 }
@@ -22,8 +20,8 @@ body {
 
 /* Header */
 header {
-  background: var(--light);
-  border-bottom: 1px solid var(--lightgray);
+  background: var(--lightgray);
+  border-bottom: 1px solid var(--darkgray);
   padding: 1.5rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -75,6 +73,7 @@ pre, code {
   background: var(--highlight);
   border-radius: var(--border-radius);
   padding: 1rem;
+  color: var(--darkgray);
   overflow-x: auto;
 }
 
@@ -83,13 +82,13 @@ pre, code {
   background: var(--lightgray);
   border-radius: var(--border-radius);
   padding: 0.5rem 1rem;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--darkgray);
   transition: var(--transition);
 }
 
 .search:focus {
   border-color: var(--secondary);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.2); /* Rot für Fokus-Effekt */
 }
 
 /* Explorer (Seitenleiste) */
@@ -107,6 +106,7 @@ pre, code {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   transition: var(--transition);
+  color: var(--darkgray);
 }
 
 .explorer a:hover {
@@ -116,7 +116,7 @@ pre, code {
 
 /* Inhaltsverzeichnis */
 .toc {
-  background: var(--light);
+  background: var(--lightgray);
   padding: 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -179,13 +179,18 @@ pre, code {
 footer {
   text-align: center;
   padding: 2rem 0;
-  border-top: 1px solid var(--lightgray);
+  border-top: 1px solid var(--darkgray);
   margin-top: 2rem;
   color: var(--gray);
 }
 
 footer a {
   margin: 0 1rem;
+  color: var(--secondary);
+}
+
+footer a:hover {
+  color: var(--tertiary);
 }
 
 /* Dark Mode */
@@ -201,11 +206,15 @@ html[data-theme="dark"] {
     background: var(--lightgray);
     color: var(--darkgray);
   }
+  .explorer a {
+    color: var(--gray);
+  }
   .explorer a:hover {
     background: var(--highlight);
+    color: var(--secondary);
   }
   .toc {
-    background: var(--lightgray);
+    background: var(--light);
   }
   .recent-notes {
     background: var(--light);

@@ -23,32 +23,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Inter", // Moderne, geometrische Schriftart
-        body: "Inter", // Einheitliche Schriftart für Konsistenz
-        code: "Fira Code", // Moderne Monospace-Schrift mit Ligaturen
+        header: "Inter",
+        body: "Inter",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
-          light: "#ffffff", // Reinweiß für klaren Hintergrund
-          lightgray: "#f1f3f5", // Weicher Grauton für Akzente
-          gray: "#6b7280", // Neutrales Grau für Texte
-          darkgray: "#374151", // Dunkleres Grau für Kontrast
-          dark: "#111827", // Tiefes Dunkelgrau für Überschriften
-          secondary: "#3b82f6", // Lebendiges Blau für Links und Akzente
-          tertiary: "#10b981", // Frisches Grün für sekundäre Akzente
-          highlight: "rgba(59, 130, 246, 0.1)", // Subtiles Blau für Hervorhebungen
-          textHighlight: "#fef08a", // Sanftes Gelb für Text-Hervorhebungen
+          light: "#e5e7eb", // Helles Grau für Hintergrund
+          lightgray: "#d1d5db", // Mittleres Grau für Akzente
+          gray: "#6b7280", // Dunkleres Grau für Texte
+          darkgray: "#374151", // Sehr dunkles Grau für Kontraste
+          dark: "#111827", // Nahezu Schwarz für Überschriften
+          secondary: "#dc2626", // Lebendiges Rot für Links und Akzente
+          tertiary: "#b91c1c", // Dunkleres Rot für sekundäre Akzente
+          highlight: "rgba(220, 38, 38, 0.1)", // Subtiles Rot für Hervorhebungen
+          textHighlight: "#f87171", // Helles Rot für Text-Hervorhebungen
         },
         darkMode: {
-          light: "#1f2937", // Dunkler Hintergrund für Dark Mode
-          lightgray: "#374151", // Leichtes Grau für Akzente
+          light: "#1f2937", // Dunkles Grau für Hintergrund
+          lightgray: "#374151", // Mittleres Grau für Akzente
           gray: "#9ca3af", // Helles Grau für Texte
-          darkgray: "#d1d5db", // Hellere Akzente
-          dark: "#f3f4f6", // Helles Grau für Überschriften
-          secondary: "#60a5fa", // Weicheres Blau für Links
-          tertiary: "#34d399", // Grün für Akzente
-          highlight: "rgba(59, 130, 246, 0.2)", // Subtiles Blau für Dark Mode
-          textHighlight: "#fef08a", // Konsistentes Gelb für Text-Hervorhebungen
+          darkgray: "#d1d5db", // Hellgrau für Kontraste
+          dark: "#f3f4f6", // Nahezu Weiß für Überschriften (Kontrast zu Schwarz)
+          secondary: "#f87171", // Helles Rot für Links
+          tertiary: "#ef4444", // Mittleres Rot für Akzente
+          highlight: "rgba(220, 38, 38, 0.2)", // Subtiles Rot für Dark Mode
+          textHighlight: "#f87171", // Helles Rot für Text-Hervorhebungen
         },
       },
     },
@@ -88,7 +88,6 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },
