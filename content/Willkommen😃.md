@@ -1,1 +1,6 @@
+---
+Title: Willkommen <3
+---
+
+
 Herzlich willkommen in Sulim's Archive! Dies ist ein Ort, an dem Wissen gesammelt und geteilt wird, um Klarheit zu schaffen und Erkenntnisse zu fördern. Unser Ziel ist es, eine verlässliche Quelle für Informationen zu bieten, die dazu beiträgt, Unklarheiten zu beseitigen und ein tieferes Verständnis zu ermöglichen.

@@ -10,19 +10,42 @@
 }
 
 /* Allgemeines Layout */
+/* Allgemeine Schriftart für den Textbereich */
 body {
-  max-width: var(--max-width);
-  margin: 0 auto;
+  font-family: 'Roboto', sans-serif; /* Moderne, klar lesbare Schriftart */
+  color: #b0b0b0; /* Helles Grau für Text */
+  background: #1a1a1a; /* Dunkler Hintergrund */
   padding: 20px;
-  background: var(--light);
-  font-family: var(--body);
-  color: var(--dark);
-  font-size: var(--base-font-size);
-  line-height: var(--line-height);
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
 }
+
+/* Spezifische Styling für den Index-Bereich */
+.index {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.index h1 {
+  font-family: 'Montserrat', sans-serif; /* Unterschiedliche Schriftart für Überschriften */
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.index .meta {
+  font-family: 'Open Sans', sans-serif; /* Leicht unterschiedliche Schrift für Metadaten */
+  font-size: 0.9rem;
+  color: #808080;
+  margin-bottom: 20px;
+}
+
+.index p {
+  font-size: 1.1rem;
+  color: #d1d1d1;
+}
+
+/* Google Fonts Import (füge dies in den <head>-Bereich deiner HTML-Datei ein) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Open+Sans&display=swap');
 
 /* Haupt-Container für Seiteninhalt */
 .quartz {
@@ -122,26 +145,37 @@ a[href^="http"] { /* Styling für URLs */
 .explorer ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .explorer li {
-  margin: 0.5rem 0;
+  margin: 2px 0; /* Sehr kleiner Abstand zwischen den Einträgen */
+  background: #1a1a1a; /* Dunkler Hintergrund */
+  border-radius: 6px; /* Leicht abgerundete Ecken */
+  transition: background 0.2s;
 }
 
 .explorer a {
   display: block;
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-  color: var(--darkgray);
+  padding: 8px 12px; /* Kompakter Padding */
+  color: #b0b0b0; /* Helles Grau für Text */
+  text-decoration: none;
+  font-size: 0.95rem; /* Leicht reduzierte Schriftgröße */
+  border-left: 4px solid transparent; /* Subtile Hervorhebung */
   overflow-wrap: break-word;
-  word-break: break-all;
-  font-size: 1rem; /* Standardgröße für bessere Lesbarkeit */
 }
 
-.explorer a:hover {
-  background: var(--highlight);
-  color: var(--secondary);
+.explorer a:hover,
+.explorer a:focus {
+  background: #333; /* Dunklerer Hover-Effekt */
+  color: #d1d1d1; /* Helligkeit bei Hover erhöhen */
+  border-left-color: #ff4444; /* Roter Akzent */
+}
+
+.explorer .active a {
+  background: #222; /* Aktiver Eintrag dunkler */
+  color: #ffffff; /* Weiß für Aktiven */
+  border-left-color: #ff6666; /* Stärkerer roter Akzent */
 }
 
 /* Inhaltsverzeichnis */
