@@ -10,42 +10,20 @@
 }
 
 /* Allgemeines Layout */
-/* Google Fonts Import (muss am Anfang stehen) */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&family=Open+Sans&display=swap');
-
-/* Allgemeine Schriftart für den Textbereich */
 body {
-  font-family: 'Roboto', sans-serif; /* Moderne, klar lesbare Schriftart */
-  color: #b0b0b0; /* Helles Grau für Text */
-  background: #1a1a1a; /* Dunkler Hintergrund */
-  padding: 20px;
-}
-
-/* Spezifische Styling für den Index-Bereich */
-.index {
-  max-width: 600px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  line-height: 1.6;
+  padding: 20px;
+  background: var(--light);
+  font-family: var(--body);
+  color: var(--dark);
+  font-size: var(--base-font-size);
+  line-height: var(--line-height);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
-.index h1 {
-  font-family: 'Montserrat', sans-serif; /* Unterschiedliche Schriftart für Überschriften */
-  font-size: 2rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.index .meta {
-  font-family: 'Open Sans', sans-serif; /* Leicht unterschiedliche Schrift für Metadaten */
-  font-size: 0.9rem;
-  color: #808080;
-  margin-bottom: 20px;
-}
-
-.index p {
-  font-size: 1.1rem;
-  color: #d1d1d1;
-}
 /* Haupt-Container für Seiteninhalt */
 .quartz {
   display: flex;
