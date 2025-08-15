@@ -1,3 +1,234 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* Moderne Styling-Anpassungen für Quartz */
+:root {
+  --border-radius: 8px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --max-width: 1200px;
+}
+
+/* Allgemeines Layout */
+body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--light);
+  font-family: var(--body);
+  color: var(--dark);
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+/* Header */
+header {
+  background: var(--light);
+  border-bottom: 1px solid var(--lightgray);
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--dark);
+}
+
+/* Links */
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--tertiary);
+  text-decoration: underline;
+}
+
+/* Inhaltsbereich */
+article {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header);
+  color: var(--dark);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.8rem; }
+p { font-size: 1.1rem; }
+
+/* Code-Blöcke */
+pre, code {
+  font-family: var(--code);
+  background: var(--highlight);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Suchleiste */
+.search {
+  background: var(--lightgray);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray);
+  transition: var(--transition);
+}
+
+.search:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Explorer (Seitenleiste) */
+.explorer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.explorer li {
+  margin: 0.5rem 0;
+}
+
+.explorer a {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.explorer a:hover {
+  background: var(--highlight);
+  color: var(--secondary);
+}
+
+/* Inhaltsverzeichnis */
+.toc {
+  background: var(--light);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc a {
+  color: var(--gray);
+}
+
+.toc a:hover {
+  color: var(--secondary);
+}
+
+/* Backlinks */
+.backlinks {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--lightgray);
+  border-radius: var(--border-radius);
+}
+
+/* Recent Notes */
+.recent-notes {
+  background: var(--lightgray);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+}
+
+.recent-notes h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--dark);
+}
+
+.recent-notes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-notes li {
+  margin: 0.5rem 0;
+}
+
+.recent-notes a {
+  color: var(--secondary);
+}
+
+.recent-notes a:hover {
+  color: var(--tertiary);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--lightgray);
+  margin-top: 2rem;
+  color: var(--gray);
+}
+
+footer a {
+  margin: 0 1rem;
+}
+
+/* Dark Mode */
+html[data-theme="dark"] {
+  body {
+    background: var(--light);
+  }
+  header {
+    background: var(--lightgray);
+    border-color: var(--gray);
+  }
+  article {
+    background: var(--lightgray);
+    color: var(--darkgray);
+  }
+  .explorer a:hover {
+    background: var(--highlight);
+  }
+  .toc {
+    background: var(--lightgray);
+  }
+  .recent-notes {
+    background: var(--light);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  article {
+    padding: 1rem;
+  }
+  .recent-notes {
+    padding: 1rem;
+  }
+  .explorer, .toc, .backlinks {
+    margin-bottom: 1rem;
+  }
+}
